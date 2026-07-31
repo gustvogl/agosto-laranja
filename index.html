@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ff5a13">
+  <meta name="description" content="Campanha interativa de conscientização sobre a esclerose múltipla com o jogo NeuroLab.">
+  <meta property="og:title" content="NeuroLab — Agosto Laranja">
+  <meta property="og:description" content="Restaure as rotas neurais.">
+  <meta property="og:image" content="assets/og-neurolab.png">
+  <title>Agosto Laranja | NeuroLab</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+<main>
+  <section class="heroNew" id="inicio">
+    <header class="floatingNav">
+      <a class="logo" href="#inicio"><i>●</i>AL<span>30</span></a>
+      <nav aria-label="Navegação principal"><a class="active" href="#inicio">Início</a><a href="#entenda">Campanha</a><a href="#sinais">Sinais</a><a href="#jogo">Jogo</a><a href="#midia">Mídia</a></nav>
+      <a class="navPill" href="#fontes">Ajuda ↗</a>
+    </header>
+    <div class="heroGrid">
+      <div class="heroWords">
+        <p class="micro">AGOSTO LARANJA · CONSCIENTIZAÇÃO</p>
+        <h1>ENTENDA<br>A <span>EM.</span></h1>
+        <p class="heroBlurb">Uma campanha para enxergar além dos sintomas, combater mitos e criar conexões que cuidam.</p>
+        <a class="blackBtn" href="#entenda">Explorar campanha <b>→</b></a>
+        <div class="trust"><div class="faces"><img src="assets/photo-01.jpg" alt=""><img src="assets/photo-05.jpg" alt=""><img src="assets/photo-06.jpg" alt=""></div><p><strong>Informação salva caminhos.</strong><br>Compartilhe com responsabilidade.</p></div>
+      </div>
+      <div class="heroPerson"><div class="orbit one"></div><div class="orbit two"></div><img src="assets/hero.jpg" alt="Mulher jovem, representando as muitas pessoas que convivem com esclerose múltipla"><div class="ribbonMark">⌁</div></div>
+      <aside class="heroSide"><div class="statBubble"><span>NO BRASIL</span><strong>~40 mil</strong><p>pessoas vivem com esclerose múltipla</p></div><div class="featured"><img src="assets/photo-03.jpg" alt="Profissional de saúde em acompanhamento clínico"><p>DIAGNÓSTICO E CUIDADO</p><strong>Um caminho individualizado <span>↗</span></strong></div><div class="miniFeatures"><span>◉<b>SNC</b></span><span>⌁<b>Mielina</b></span><span>✦<b>Apoio</b></span></div></aside>
+    </div>
+    <div class="heroTicker"><span>CONHECER</span><i>✦</i><span>ACOLHER</span><i>✦</i><span>INFORMAR</span><i>✦</i><span>CUIDAR</span></div>
+  </section>
+
+  <section class="manifest" id="entenda">
+    <div class="verticalTag">30·08 — DIA NACIONAL</div>
+    <div><p class="micro">A DOENÇA DAS MIL FACES</p><h2>Quando a defesa do corpo<br>confunde o <em>próprio caminho.</em></h2></div>
+    <div class="manifestCopy"><p>A esclerose múltipla é uma doença crônica, inflamatória e imunomediada que afeta o cérebro e a medula espinhal. O sistema imunológico pode danificar a mielina, camada protetora dos neurônios, e alterar a comunicação entre cérebro e corpo.</p><p>Não existe uma experiência única: sintomas, intensidade e evolução variam. Por isso, escuta, diagnóstico especializado e tratamento individualizado importam.</p><a href="https://www.gov.br/saude/pt-br/assuntos/pcdt/e/esclerose-multipla" target="_blank" rel="noreferrer">Consultar fonte oficial ↗</a></div>
+  </section>
+
+  <section class="symptoms" id="sinais">
+    <div class="sectionTitle"><p class="micro">SINAIS QUE MERECEM ATENÇÃO</p><h2>O corpo pode falar<br><span>de muitos jeitos.</span></h2><p>Sintomas isolados não confirmam EM. Se forem persistentes ou recorrentes, procure avaliação profissional.</p></div>
+    <div class="symptomDeck">
+      <article class="symptomCard c1"><b>01</b><div class="cardGlyph">⌁</div><h3>VISÃO</h3><p>Visão embaçada, dupla ou dor ao mover os olhos.</p></article>
+      <article class="symptomCard c2"><b>02</b><div class="cardGlyph">✦</div><h3>FADIGA</h3><p>Cansaço intenso e desproporcional à rotina.</p></article>
+      <article class="symptomCard c3"><b>03</b><div class="cardGlyph">⌁</div><h3>SENSIBILIDADE</h3><p>Dormência, formigamento ou sensações diferentes.</p></article>
+      <article class="symptomCard c4"><b>04</b><div class="cardGlyph">✦</div><h3>EQUILÍBRIO</h3><p>Tontura e alterações de coordenação ou marcha.</p></article>
+      <article class="symptomCard c5"><b>05</b><div class="cardGlyph">⌁</div><h3>FORÇA</h3><p>Fraqueza, rigidez ou dificuldade de movimento.</p></article>
+      <article class="symptomCard c6"><b>06</b><div class="cardGlyph">✦</div><h3>COGNIÇÃO</h3><p>Mudanças de memória, atenção e processamento.</p></article>
+    </div>
+  </section>
+
+  <section class="gameSection" id="jogo">
+    <div class="gameHeading"><p class="micro">EXPERIÊNCIA INTERATIVA</p><h2>NEURO<br><span>LAB</span></h2><p>Um puzzle tático em cinco mapas. Planeje rotas, recolha mielina, evite zonas de inflamação, encontre portais e alcance a sinapse com o menor número de movimentos.</p></div>
+    <div class="labShell" id="neurolab">
+      <div class="labTop"><div><span id="phaseLabel">NEUROLAB · FASE 1/5</span><strong id="levelName">Primeiro impulso</strong></div><div class="labStats"><span>ENERGIA<b id="energy">26</b></span><span>VIDAS<b id="lives">●●●</b></span><span>MIELINA<b id="myelinCount">0/2</b></span><span>PONTOS<b id="score">0</b></span></div><button type="button" id="pauseBtn" aria-label="Pausar jogo" disabled>Ⅱ</button></div>
+      <div class="labStage">
+        <div class="labBoard" id="labBoard" role="grid" aria-label="Tabuleiro do jogo NeuroLab"></div>
+        <aside class="missionPanel"><p>OBJETIVO DA FASE</p><h3 id="missionTitle">Restaure a proteção</h3><span id="message">Colete toda a mielina e alcance a sinapse final.</span><div class="legend"><i><b class="lgMyelin">◌</b>Mielina</i><i><b class="lgFire">✹</b>Inflamação</i><i><b class="lgShield">⬡</b>Escudo</i><i><b class="lgPortal">◎</b>Portal</i></div><div class="starGoal"><span>★ ★ ★</span><small id="parText">Complete em até 16 movimentos para 3 estrelas.</small></div><div class="missionActions"><button type="button" id="undoBtn" disabled>↶ Desfazer</button><button type="button" id="restartBtn">↻ Reiniciar</button></div></aside>
+        <div class="labOverlay" id="gameOverlay"><span class="labIcon" id="overlayIcon">⌬</span><p id="overlayKicker">NOVO JOGO · PUZZLE TÁTICO</p><h3 id="overlayTitle">Restaure as<br>rotas neurais.</h3><small id="overlayText">Explore cinco mapas, recolha toda a mielina e alcance a sinapse. Planeje seus movimentos, use escudos e encontre portais.</small><button type="button" id="overlayBtn">Entrar no NeuroLab →</button></div>
+      </div>
+      <div class="labControls"><div class="dpad"><button type="button" data-move="up" aria-label="Mover para cima">↑</button><button type="button" data-move="left" aria-label="Mover para esquerda">←</button><button type="button" data-move="down" aria-label="Mover para baixo">↓</button><button type="button" data-move="right" aria-label="Mover para direita">→</button></div><p><b>CONTROLES</b> Setas ou WASD · U para desfazer · toque nos botões no celular</p><div class="levelTrack" id="levelTrack"><i class="current">1</i><i>2</i><i>3</i><i>4</i><i>5</i></div></div>
+    </div>
+  </section>
+
+  <section class="galleryNew" id="midia">
+    <div class="sectionTitle dark"><p class="micro">8 RETRATOS · UMA REDE</p><h2>Conexões que<br><span>fortalecem.</span></h2></div>
+    <div class="galleryRail">
+      <figure><img src="assets/photo-01.jpg" alt="Escuta e cuidado"><figcaption><b>01</b><span>Escuta e cuidado</span></figcaption></figure>
+      <figure><img src="assets/photo-02.jpg" alt="Informação aproxima"><figcaption><b>02</b><span>Informação aproxima</span></figcaption></figure>
+      <figure><img src="assets/photo-03.jpg" alt="Acompanhamento"><figcaption><b>03</b><span>Acompanhamento</span></figcaption></figure>
+      <figure><img src="assets/photo-04.jpg" alt="Autonomia"><figcaption><b>04</b><span>Autonomia</span></figcaption></figure>
+      <figure><img src="assets/photo-05.jpg" alt="Rede de apoio"><figcaption><b>05</b><span>Rede de apoio</span></figcaption></figure>
+      <figure><img src="assets/photo-06.jpg" alt="Comunidade"><figcaption><b>06</b><span>Comunidade</span></figcaption></figure>
+      <figure><img src="assets/photo-07.jpg" alt="Vida além do diagnóstico"><figcaption><b>07</b><span>Vida além do diagnóstico</span></figcaption></figure>
+      <figure><img src="assets/photo-08.jpg" alt="Ciência e esperança"><figcaption><b>08</b><span>Ciência e esperança</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="watch"><div class="watchIntro"><p class="micro">ASSISTA E COMPARTILHE</p><h2>Informação<br>em <em>movimento.</em></h2><p>Conteúdos em português para entender o que é a EM e reconhecer seus sinais.</p></div><div class="videoCards"><article><div><iframe src="https://www.youtube-nocookie.com/embed/hQxFfTY4NI0" title="O que é esclerose múltipla e tratamento" loading="lazy" allowfullscreen></iframe></div><span>01 · TELEVISÃO SAÚDE</span><h3>O que é esclerose múltipla?</h3></article><article><div><iframe src="https://www.youtube-nocookie.com/embed/gdD2DwLpumQ" title="Como identificar sintomas da esclerose múltipla" loading="lazy" allowfullscreen></iframe></div><span>02 · TV SENADO</span><h3>Como identificar os sintomas</h3></article></div></section>
+
+  <section class="sourceBand" id="fontes"><div><p class="micro">INFORMAÇÃO SEGURA</p><h2>Não caminhe<br><span>sozinho.</span></h2></div><div class="sourceLinks"><a href="https://www.gov.br/saude/pt-br/assuntos/pcdt/e/esclerose-multipla" target="_blank" rel="noreferrer"><b>01</b><span>Ministério da Saúde<small>Diretrizes e tratamento</small></span><i>↗</i></a><a href="https://www.abem.org.br/" target="_blank" rel="noreferrer"><b>02</b><span>ABEM<small>Acolhimento e informação</small></span><i>↗</i></a><a href="https://bvsms.saude.gov.br/30-8-dia-nacional-de-conscientizacao-sobre-a-esclerose-multipla-4/" target="_blank" rel="noreferrer"><b>03</b><span>Biblioteca Virtual em Saúde<small>Campanha nacional</small></span><i>↗</i></a></div></section>
+
+  <footer><div class="footLogo"><i>●</i><h2>AGOSTO<br><span>LARANJA</span></h2><p>#agostolaranja 🧡</p></div><div class="credits"><p class="micro">CRÉDITOS DO PROJETO</p><dl><div><dt>AUTORIA</dt><dd>Nome(s) do(s) estudante(s)</dd></div><div><dt>ESCOLA</dt><dd>Nome da escola</dd></div><div><dt>PROFESSORES</dt><dd>Nome(s) do(s) professor(es)</dd></div><div><dt>TURMA / ANO</dt><dd>Preencher aqui · 2026</dd></div></dl></div><div class="footEnd"><p>Conteúdo educativo. Não substitui avaliação médica.</p><a href="#inicio">Voltar ao topo ↑</a></div></footer>
+</main>
+</body>
+</html>
